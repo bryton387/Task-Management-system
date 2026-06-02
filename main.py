@@ -3,6 +3,12 @@ Task Management System - Main Program
 Allows users to manage tasks, track progress, and mark tasks as complete.
 """
 
+import sys
+import os
+
+# Add current directory to Python path to ensure modules can be imported
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from task_utils import (
     add_task,
     mark_task_complete,
